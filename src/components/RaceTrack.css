@@ -1,0 +1,200 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .race-track {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  /* Mesafe Seçici */
+  .distance-selector {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .distance-selector label {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #4CAF50;
+  }
+  
+  /* Yarış Bilgisi */
+  .race-info {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Yarış Pisti */
+  .track {
+    position: relative;
+    height: 200px;
+    background: linear-gradient(to right, #e0e0e0 1px, transparent 1px);
+    background-size: 6% 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .horse {
+    position: absolute;
+    bottom: 20px;
+    height: 50px;
+    width: 60px;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: left 0.5s ease-in-out;
+  }
+  
+  /* Kazanan At */
+  .horse.winner {
+    background-color: #ffcc00;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    animation: winner-bounce 1s ease-in-out infinite;
+  }
+  
+  @keyframes winner-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .horse-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .horse-info {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #444;
+  }
+  
+  /* Butonlar */
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Kazanan Kutlama */
+  .winner-info {
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5);
+    margin-top: 20px;
+    animation: glow 1.5s alternate infinite;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+    }
+    to {
+      box-shadow: 0 0 25px rgba(255, 165, 0, 1);
+    }
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .race-track {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .track {
+      height: 150px;
+    }
+  
+    .horse {
+      height: 40px;
+      width: 50px;
+    }
+  
+    .horse-name {
+      font-size: 0.8rem;
+    }
+  
+    .buttons button {
+      padding: 8px 18px;
+    }
+  
+    .distance-selector input[type="number"] {
+      width: 100px;
+    }
+  }
+  

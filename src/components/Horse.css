@@ -1,0 +1,178 @@
+/* Genel Sayfa Stili */
+.Home {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  /* Hoş Geldiniz Bölümü */
+  .welcome-container {
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .welcome-container .sub-heading {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #1cc88a;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-button:hover {
+    background-color: #17a673;
+  }
+  
+  /* Özellikler Bölümü */
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  .feature-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 28%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #4e73df;
+  }
+  
+  .feature-item p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item button {
+    background-color: #4e73df;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-item button:hover {
+    background-color: #2e59d9;
+  }
+  
+  /* CTA Footer */
+  .cta-footer {
+    background-color: #17a673;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: white;
+    width: 100%;
+  }
+  
+  .cta-footer p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-footer .cta-button {
+    background-color: #1cc88a;
+    padding: 12px 30px;
+    font-size: 1.3em;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .cta-footer .cta-button:hover {
+    background-color: #17a673;
+  }
+  
+  /* Sepet Özeti */
+  .cart-summary {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-summary h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .cart-summary ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-summary li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* Animasyonlar */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.body{
+    height: 100%;
+}  

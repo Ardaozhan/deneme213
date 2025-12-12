@@ -1,0 +1,56 @@
+.canli-yaris-takibi {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .race-list {
+    margin-bottom: 20px;
+  }
+  
+  .race-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .race-list li {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e6f7ff;
+    border: 1px solid #b3d8ff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .race-list li:hover {
+    background-color: #ccefff;
+  }
+  
+  .race-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .countdown {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

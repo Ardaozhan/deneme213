@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "raceName": "Gazi Koşusu",
+    "city": "İstanbul",
+    "distance": 2400,
+    "date": "2025-01-21",
+    "time": "14:00",
+    "participants": [
+      { "name": "Şahbatur", "jockey": "Ahmet Kaya", "odds": 3.5 },
+      { "name": "Yıldırım", "jockey": "Mehmet Demir", "odds": 2.8 }
+    ]
+  },
+  {
+    "id": 2,
+    "raceName": "Bursa Yarışı",
+    "city": "Bursa",
+    "distance": 2000,
+    "date": "2025-01-22",
+    "time": "16:00",
+    "participants": [
+      { "name": "Rüzgar", "jockey": "Ali Çetin", "odds": 4.2 },
+      { "name": "Kartal", "jockey": "Mustafa Yılmaz", "odds": 3.0 }
+    ]
+  }
+]

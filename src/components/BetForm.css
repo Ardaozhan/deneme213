@@ -1,0 +1,181 @@
+/* BetForm konteyneri */
+.bet-form {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* BetForm başlıkları */
+.bet-form h2 {
+  font-size: 26px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Kalan süre */
+.bet-form .countdown {
+  text-align: center;
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.bet-form .countdown p {
+  font-size: 18px;
+  color: #3498db;
+}
+
+/* Form grubu */
+.bet-form .form-group {
+  margin-bottom: 25px;
+}
+
+.bet-form label {
+  display: block;
+  font-size: 18px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.bet-form select,
+.bet-form input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+
+.bet-form select:focus,
+.bet-form input[type="number"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Submit butonu */
+.bet-form .submit-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bet-form .submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.bet-form .submit-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Bahis durumu mesajı */
+.bet-form .bet-status {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.bet-form .bet-status.success {
+  color: #27ae60;
+}
+
+.bet-form .bet-status.error {
+  color: #e74c3c;
+}
+
+/* Pop-up */
+.bet-form .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.bet-form .popup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bet-form .popup button:hover {
+  background-color: #2980b9;
+}
+
+/* Bahis geçmişi */
+.bet-form h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.bet-form ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bet-form ul li {
+  font-size: 16px;
+  background-color: #ecf0f1;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Yardım sohbeti */
+.bet-form .chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bet-form .chatbot p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.bet-form .chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  font-size: 16px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bet-form .chat-btn:hover {
+  background-color: #3498db;
+}

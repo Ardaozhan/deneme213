@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Yarış 1",
+      "date": "2025-01-21",
+      "location": "İstanbul",
+      "distance": 1500,
+      "horses": [
+        {
+          "id": 1,
+          "name": "At 1",
+          "speed": 50,
+          "stamina": 70,
+          "reactionTime": 2
+        },
+        {
+          "id": 2,
+          "name": "At 2",
+          "speed": 60,
+          "stamina": 80,
+          "reactionTime": 1.8
+        }
+      ]
+    }
+  ]
+  

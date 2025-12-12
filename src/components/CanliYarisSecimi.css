@@ -1,0 +1,63 @@
+.CanliYarisSecimi {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .CanliYarisSecimi h1 {
+    color: #4e73df;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .CanliYarisSecimi p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .race-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .race-item {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: left;
+  }
+  
+  .race-item h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .race-item p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .cta-button {
+    background-color: #4e73df;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #2e59d9;
+  }
+  

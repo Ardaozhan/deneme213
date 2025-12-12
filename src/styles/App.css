@@ -1,0 +1,252 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ana Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #3f72af;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Menüdeki öğelerin üst üste gelmesini engellemek için */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo kısmı */
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Navbar için normal menü öğeleri */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: auto;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #528ad8;
+}
+
+/* Geçiş Animasyonu */
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Button */
+.button {
+  background-color: #528ad8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #3f72af;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Login ve Register Sayfaları için Genel Stil */
+.login-container, .register-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #528ad8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.button:hover {
+  background-color: #3f72af;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+p a {
+  color: #528ad8;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menü */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hamburger Menü İçeriği */
+.hamburger-menu-content {
+  display: none;
+  position: absolute;
+  top: 60px; /* Hamburger menüsünün altına yerleştir */
+  right: 10px;
+  background-color: #3f72af;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-menu-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.hamburger-menu-content a:hover {
+  background-color: #528ad8;
+}
+
+.hamburger-menu.active + .hamburger-menu-content {
+  display: block;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block; /* Mobilde hamburger menüsünü göster */
+  }
+
+  .hamburger-menu-content {
+    position: fixed; /* Menü sabit kalsın */
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #3f72af;
+    display: block;
+    padding: 15px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Animasyonlu Sayfa Geçişi */
+.page-transition {
+  transition: transform 0.5s ease-in-out;
+}

@@ -1,0 +1,107 @@
+/* Yarış Listesi Genel Stili */
+.RaceList {
+  background: #fff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+  transform: scale(0.98);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Başlık */
+.RaceList h2 {
+  font-size: 3rem;
+  color: #075358;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Yarışların Stili */
+.race {
+  background-color: #f8f8f8;
+  margin-bottom: 25px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.race:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Atların Listelenmesi */
+.race ul {
+  list-style: none;
+  padding: 0;
+}
+
+.race li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.race li:hover {
+  background-color: #d3e013;
+  color: white;
+}
+
+.race li img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.race li:hover img {
+  transform: scale(1.1);
+}
+
+.race li button {
+  background-color: #0b0c0f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.race li button:hover {
+  background-color: #1013c9;
+  transform: scale(1.1);
+}

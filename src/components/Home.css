@@ -1,0 +1,334 @@
+/* Ana Sayfa */
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  animation: fadeInPage 1.5s ease-out;
+
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden; /* İçeriğin taşmasını engellemek */
+}
+
+/* Sayfa açılış animasyonu */
+@keyframes fadeInPage {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+/* Background Parallax Effect */
+.Home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Horse.jpg'); /* Replace with your own background image */
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px);
+  z-index: -1;
+  background-attachment: fixed; /* Arka planı sabitle */
+}
+
+/* Parallax Efekti Animasyonu */
+@keyframes parallaxEffect {
+0% {
+  transform: translateY(0);
+}
+100% {
+  transform: translateY(100px);
+}
+}
+
+.welcome-container {
+  animation: fadeIn 2s ease-in-out;
+  margin-bottom: 50px;
+}
+
+.welcome-container h1 {
+  font-size: 42px;
+  color: #3f72af;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+/* Başlık animasyonu */
+@keyframes slideInFromLeft {
+0% {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+}
+}
+
+.sub-heading {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeInSubHeading 2s ease-in-out 1s forwards;
+}
+
+/* Alt başlık animasyonu */
+@keyframes fadeInSubHeading {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.cta-button {
+  background-color: #3f72af;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buton hover animasyonu */
+.cta-button:hover {
+  background-color: #528ad8;
+  transform: scale(1.1);
+}
+
+/* Buton hover sırasında yuvarlak genişleme */
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #528ad8;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.cta-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  animation: fadeInUp 2s ease-out 0.5s forwards;
+}
+
+/* Özellikler animasyonu */
+@keyframes fadeInUp {
+0% {
+  opacity: 0;
+  transform: translateY(50px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.feature-item {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  animation: fadeInFeature 0.8s ease-in-out;
+}
+
+/* Özellikler öğesi animasyonu */
+@keyframes fadeInFeature {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h2 {
+  color: #3f72af;
+  font-size: 22px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.feature-item:hover h2 {
+  color: #528ad8;
+}
+
+.feature-item p {
+  color: #777;
+  transition: color 0.3s ease;
+}
+
+.feature-item:hover p {
+  color: #555;
+}
+
+/* Yeni: Feature item hover efekti */
+.feature-item:hover {
+  background-color: #f0f4f8;
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.cta-footer {
+  background-color: #3f72af;
+  color: white;
+  padding: 40px;
+  margin-top: 60px;
+  border-radius: 10px;
+  animation: slideInFooter 1.5s ease-out 0.5s forwards;
+}
+
+/* Footer animasyonu */
+@keyframes slideInFooter {
+0% {
+  transform: translateY(50px);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+.cta-footer p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInTextFooter 1.5s ease-out 0.5s forwards;
+}
+
+/* Footer metin animasyonu */
+@keyframes fadeInTextFooter {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.cta-footer .cta-button {
+  padding: 15px 30px;
+  border-radius: 40px;
+  background-color: #528ad8;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Footer buton hover animasyonu */
+.cta-footer .cta-button:hover {
+  background-color: #3f72af;
+  transform: scale(1.1);
+}
+
+/* Yeni: Kapsayıcı içerik kutusu */
+.home-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  animation: fadeInBox 1s ease-out;
+}
+
+/* Kapsayıcı içerik kutusu animasyonu */
+@keyframes fadeInBox {
+0% {
+  opacity: 0;
+  transform: scale(0.9);
+}
+100% {
+  opacity: 1;
+  transform: scale(1);
+}
+}
+
+/* Yeni: Parallax Efekti */
+.home {
+  animation: parallaxScroll 5s linear infinite;
+}
+
+@keyframes parallaxScroll {
+0% {
+  background-position: 0 0;
+}
+100% {
+  background-position: 100% 0;
+}
+}
+
+/* Sohbet Botu Popup Butonu */
+.chatbot-toggle {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 50%;
+padding: 15px;
+font-size: 24px;
+cursor: pointer;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+z-index: 100;
+}
+
+.chatbot-toggle:hover {
+background-color: #45a049;
+}
+
+/* Sohbet Botu Popup */
+.chatbot-popup {
+position: fixed;
+bottom: 80px;
+right: 20px;
+width: 300px;
+height: 400px;
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+padding: 10px;
+z-index: 1000;
+}
+
